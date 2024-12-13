@@ -43,10 +43,10 @@ searchBtn.addEventListener('click', () => {
         windSpeed.innerHTML = `<p>${data.wind.speed} km/h<br><span>Wind Speed</span></p>`;
 
         // let work on the pic according to the response:
-        if (data.weather[0].main === 'Clear') img.src = "/icons/01.png";
-        else if (data.weather[0].main === 'Clouds') img.src = "/icons/02.png";
-        else if (data.weather[0].main === 'Rain') img.src = "/icons/03.png";
-        else if (data.weather[0].main === 'Snow') img.src = "/icons/04.png";
+        if (data.weather[0].main === 'Clear') img.src = "icons/01.png";
+        else if (data.weather[0].main === 'Clouds') img.src = "icons/02.png";
+        else if (data.weather[0].main === 'Rain') img.src = "icons/03.png";
+        else if (data.weather[0].main === 'Snow') img.src = "icons/04.png";
         
       }
     })
