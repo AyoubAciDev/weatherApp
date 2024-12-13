@@ -1,0 +1,159 @@
+/* global styling */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+}
+
+/* start main container styling */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  width: 420px;
+  border-radius: 30px;
+  border: none;
+  padding: 20px;
+  align-items: center;
+  background-image: linear-gradient(-45deg, rgba(99, 179, 255, 0.788), rgb(51, 255, 238));
+}
+/* end main container styling */
+
+/* start search bar styling */
+.search-bar-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.search-bar-container input {
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 10px 10px 10px 20px;
+  font-family: monospace;
+}
+
+.search-bar-container i {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  color: rgba(39, 39, 39, 0.836);
+}
+/* end search bar styling */
+
+/* weather img */
+img {
+  width: 120px;
+  height: 120px;
+  margin-top: 50px;
+}
+
+.temp {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: lighter;
+  margin-top: 30px;
+}
+
+.city {
+  color: white;
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+  margin-top: -5px;
+  margin-bottom: 40px;
+}
+
+.more-info-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  color: white;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.more-info {
+  display: flex;
+  padding: 10px;
+}
+
+.more-info i{
+  margin-right: 10px;
+}
+.more-info .number {
+  font-size: 1.5rem;
+}
+.more-info .number span{
+  font-size: 1rem;
+}
+
+
+/* style error*/
+.red-message {
+  color: red;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: -200px;
+  margin-top: 8px;
+}
+
+/* start media queris */
+@media (max-width : 450px ){
+  .main-container {
+    width: 350px;
+  }
+
+  .search-bar-container {
+    width: 100%;
+  }
+  .more-info i{
+    margin-right: 7px;
+    font-size: 1.2rem;
+  }
+  .more-info .number {
+    font-size: 1.1rem;
+  }
+  .more-info .number span{
+    font-size: 0.7rem;
+  }
+}
+/* start media queris */
+@media (max-width : 350px ){
+  .main-container {
+    width: 300px;
+  }
+
+  .search-bar-container input {
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 8px 8px 8px 15px;
+  }
+  
+  .search-bar-container i {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgba(39, 39, 39, 0.836);
+  }
+}
